@@ -40,7 +40,7 @@ Both Forward+ and Clustered Deferred retain better performance as number of ligh
 ## Project Limitations
 The current submission of this project lacks the following: 
 * Implementation of Part 2 (additional post processing effect and optimizations).
-* There is significant issue with visible tiling and artifacting that would suggest `updateClusters()` is implemented incorrectly. I think a better approach, rather than trying to emulate a `ProjectionMatrix`, is to directly pass `ViewProjectionMatrix` into `updateClusters()`. Tiling issue becomes incredibly obvious once number of lights are increased. 
+* There is significant issue with visible tiling and artifacting that would suggest `updateClusters()` is implemented incorrectly. I think a better approach, rather than trying to emulate a `ProjectionMatrix`, is to directly pass `ViewProjectionMatrix` into `updateClusters()`. Tiling issue becomes incredibly obvious once number of lights are increased. This may be a product of problem detailed below. 
 * I believe my computer does not fully utilize my GPU. Either I have setup my system incorrectly or there is some other issue. This is obvious in the low FPS even at low numbers of lights. 
 
 ### Credits
