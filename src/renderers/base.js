@@ -57,9 +57,6 @@ export default class BaseRenderer {
             vec4.transformMat4(minXYZ, minXYZ, viewMatrix);
             vec4.transformMat4(maxXYZ, maxXYZ, viewMatrix);
 
-            minXYZ[2] *= -1;
-            maxXYZ[2] *= -1;
-
             // 2) determine which cluster light is in
 
             // 2.a) compute min and max of x slice
